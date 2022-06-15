@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZuriBoard-Yahaya</title>
+</head>
+<body>
+
+    <h1>Blog Page</h1>
+     <h5>This is the blog page for Yahaya's ZuriBoard</h5>
+    {% if BlogPosts %}
+
+        {% for post in BlogPosts %}
+
+              <ul>
+                  <li>{{post.title}}</li>
+              </ul>
+
+        {% endfor %}
+    {% else %}
+        <p><i>You have no Blog Posts<i></i></p>
+    {% endif %}
+
+
+</body>
+</html>
